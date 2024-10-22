@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    position: relative;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-container h2 span {
+    color: #35c449;
+}
+
+.form-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #35c449;
+}
+
+.form-container .required {
+    color: red;
+}
+
+.form-container button {
+    background-color: #35c449;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container button:hover {
+    background-color: #28a745;
+}
+
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    /*background-image: url('triangle-pattern.png'); Adjust the path if needed */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
